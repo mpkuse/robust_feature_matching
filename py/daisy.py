@@ -93,14 +93,16 @@ print 'flann matching took in sec : ', time.time() - startFLANN
 
 #
 # Lowe's ratio test
+print 'Lowe Ratio Test'
 __pt1, __pt2 = _lowe_ratio_test( kp, kp, matches )
 
 
 #
 # Essential Matrix Test
+print 'F-test'
 E, mask = cv2.findEssentialMat( __pt1, __pt2 )
 
 print __pt1.shape
 cv2.imshow( 'canvas', debug_draw_matches(im1, __pt1, im2, __pt2, mask ) )
-code.interact( local=locals() )
+# code.interact( local=locals() )
 cv2.waitKey(0)
