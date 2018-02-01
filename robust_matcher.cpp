@@ -111,7 +111,7 @@ void drawMatches( const cv::Mat& im1, const vector<cv::Point2f>& pts_1,
         }
         else
         {
-          ;
+          cv::line( outImage,  p1, p2+cv::Point2f(im1.cols,0), cv::Scalar(0,0,255) );;
         }
       }
       else // no status. Then make all lines blue
