@@ -1,7 +1,7 @@
 /*
-  Reads 2 images, detects keypoints, compute ORB descriptors at these keypoints, 
+  Reads 2 images, detects keypoints, compute ORB descriptors at these keypoints,
   matches the descriptors by nearest neighbour (brute force)
-  
+
   Author : Manohar Kuse <mpkuse@connect.ust.hk>
   Released in Public Domain
 */
