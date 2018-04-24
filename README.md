@@ -13,6 +13,10 @@ Basic demo of the papers
 
 The original code supplied by this paper uses the SURF detectors which a lot of people have issues compiling due to the copyright issues with the SURF implementation. I adopted their original code to make it working with ORB features. 
 
+This also contains usage samples for simple keypoint matching (with Lowe's ratio test and Fundamental-test for outlier rejection). Usage samples are in both C++ and Python. This can be used as a boilerplate code for many computer vision applications. Feature detection and matching is usually very common in a typical computer vision pipeline. 
+
+This related [github-gist](https://gist.github.com/mpkuse/c96010112ec07269d944e199d029303a) might also be useful. 
+
 
 # How to Compile
 Only dependency is OpenCV
@@ -22,6 +26,7 @@ cmake ..
 make
 ./robust_matcher
 ```
+Python codes in `py` directory and can be executed directly. 
 
 # Result
 ![Result Image VFC](image/result.png "Result Image VFC")
